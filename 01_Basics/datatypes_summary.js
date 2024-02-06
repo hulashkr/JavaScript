@@ -51,4 +51,32 @@ const myFunc = function() {
     console.log("hello");
 }
 
+// *****************************************************
 
+// Stack and Heap Memory 
+
+// Primitive => Stack Memory
+// Non-primitive => Heap Memory
+
+
+// Stack memory (Copy)
+let ytName = "chaiaurcode"
+let anotheYtname = ytName
+anotheYtname = "codeaurchai"
+
+console.log(ytName);
+console.log(anotheYtname);
+
+
+
+// Heap memory (References)
+let user1 = {
+    email: "user1@google.com",
+    age: 25
+}
+
+let user2 = user1;
+user2.age = 30
+
+console.log(user1); // { email: 'user1@google.com', age: 30 }
+console.log(user2); // { email: 'user1@google.com', age: 30 }
